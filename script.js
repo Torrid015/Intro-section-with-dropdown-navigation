@@ -24,10 +24,10 @@ function dropdown1() {
   function opendrop() {
     if (content.style.display === 'none') {
       content.style.display = 'block';
-      arrowup.setAttribute('src', '/images/icon-arrow-up.svg');
+      arrowup.setAttribute('src', 'images/icon-arrow-up.svg');
     } else {
       content.style.display = 'none';
-      arrowup.setAttribute('src', '/images/icon-arrow-down.svg');
+      arrowup.setAttribute('src', 'images/icon-arrow-down.svg');
     }
   }
 
@@ -43,14 +43,14 @@ function dropdown1() {
     function onlyopen() {
       if (content.style.display === 'none') {
         content.style.display = 'block';
-        arrowup.setAttribute('src', '/images/icon-arrow-up.svg');
+        arrowup.setAttribute('src', 'images/icon-arrow-up.svg');
       }
     }
 
     function onlyclose() {
       if (content.style.display === 'block') {
         content.style.display = 'none';
-        arrowup.setAttribute('src', '/images/icon-arrow-down.svg');
+        arrowup.setAttribute('src', 'images/icon-arrow-down.svg');
       }
     }
   }
@@ -68,10 +68,10 @@ function drop1() {
   function opendrop2() {
     if (content2.style.display === 'none') {
       content2.style.display = 'block';
-      arrowup2.setAttribute('src', '/images/icon-arrow-up.svg');
+      arrowup2.setAttribute('src', 'images/icon-arrow-up.svg');
     } else {
       content2.style.display = 'none';
-      arrowup2.setAttribute('src', '/images/icon-arrow-down.svg');
+      arrowup2.setAttribute('src', 'images/icon-arrow-down.svg');
     }
   }
 
@@ -89,14 +89,14 @@ function drop1() {
     function onlyopen2() {
       if (content2.style.display === 'none') {
         content2.style.display = 'block';
-        arrowup2.setAttribute('src', '/images/icon-arrow-up.svg');
+        arrowup2.setAttribute('src', 'images/icon-arrow-up.svg');
       }
     }
 
     function onlyclose2() {
       if (content2.style.display === 'block') {
         content2.style.display = 'none';
-        arrowup2.setAttribute('src', '/images/icon-arrow-down.svg');
+        arrowup2.setAttribute('src', 'images/icon-arrow-down.svg');
       }
     }
   }
