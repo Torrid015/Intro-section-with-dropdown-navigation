@@ -1,0 +1,350 @@
+*{
+    font-family: Oswald, popins;
+}
+
+body{
+    background-color: #f8f5f5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-sec{
+    display: flex;
+}
+
+.logo{
+    padding: 5px;
+}
+
+.logo h1{
+    margin: 0;
+}
+
+.drops{
+    padding: 5px;
+    display: flex;
+}
+
+.closenav{
+    display: none;
+}
+
+.dropdown{
+    display: inline-block;
+    transition: ease 0.3s;
+    position: relative;
+}
+
+.dropdownbtn,
+.dropdownbtn2,
+.careers,
+.about{
+    padding: 10px 12px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #807b7b;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.dropdownbtn:hover,
+.dropdownbtn2:hover{
+    color: #0e0d0d;
+}
+
+.content,
+.content2{
+    padding: 7px 12px;
+    background-color: #ffffff;
+    position: absolute;
+    display: none;
+    box-shadow: 2px 2px 5px #afacaf8a;
+    min-width: 100px;
+}
+
+.content a,
+.content2 a{
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    color: #807d7d;
+    transition: 0.3s ease;
+}
+
+.content a span{
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* .dropdown:hover .content, */
+/* .dropdown2:hover .content2{
+    display: block;
+} */
+
+.content a:hover,
+.content2 a:hover,
+.careers a:hover,
+.about a:hover{
+    color: #050505;
+}
+
+.careers a,.about a{
+    text-decoration: none;
+    color: #807d7d;
+}
+
+.logs{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.reg,.login{
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.logs div a{
+    text-decoration: none;
+    color: #807d7d;
+    transition: ease-in 0.3s;
+}
+
+.logs div a:hover{
+    color: #050505;
+}
+
+.reg a{
+    border: 1px solid #050505;
+    padding: 12px 25px;
+    border-radius: 12px;
+}
+
+.reg a:hover{
+    border: 1px solid #050505;
+    color: #050505;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.logn{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+main{
+    padding: 20px 0;
+    display: flex;
+    height: 80vh;
+    align-items: start;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.leftsec{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.head h1{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.head span{
+    display: block;
+}
+
+.exp p{
+    word-spacing: 4px;
+    font-weight: 100;
+    width: 350px;
+    margin-bottom: 20px;
+    color: #807b7b;
+}
+
+.rsec{
+    width: 40%;
+    height: 100%;
+}
+
+.right{
+    width: 100%;
+    height: 90%;
+    background-image: url('images/image-hero-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+
+.learn a{
+    padding: 10px 12px;
+    text-decoration: none;
+    background-color: #050505;
+    color: #fff;
+    border-radius: 15px;
+    transition: ease-in 0.3s;
+}
+
+.learn a:hover{
+    background-color: transparent;
+    border: 1px solid #050505;
+    color: #807d7d;
+}
+
+.grid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.grid div{
+    margin: 10px;
+}
+
+
+@media (max-width: 477px) {
+
+ 
+
+    .dropdown{
+        margin-top: 30px;
+    }
+
+
+    .drops{
+
+    /* display: none; */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -320px;
+    height: 100vh;
+    width: 200px;
+    justify-content: start;
+    padding: 10px 30px;
+    background-color: #fafafa;
+    z-index: 99;
+    overflow: hidden;
+    border-radius: 0;
+    transition: ease-in 0.3s;
+}
+
+.hamburger{
+    display: initial;
+}
+
+.closenav{
+    display: initial;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.content, .content2 {
+    padding: 7px 12px;
+    background-color: transparent;
+    position: sticky;
+    display: none;
+    box-shadow: 0 0 0;
+    min-width: 100px;
+}
+
+.logs {
+    display: none;
+    margin-right: 0;
+}
+
+.logn,
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shift{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownbtn,
+.dropdownbtn2,
+.careers,
+.about,
+.login,
+.reg{
+    margin: 15px 0 15px 0;
+}
+
+.reg a {
+    padding: 12px 55px;
+    border-radius: 18px;
+}
+.reg a:hover {
+    padding: 12px 55px;
+    border-radius: 18px;
+}
+
+
+main {
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    overflow: hidden;
+}
+
+.rsec {
+    width: 80%;
+    height: 100%;
+}
+
+.right {
+    width: 100%;
+    height: 90%;
+    background-image: url('images/image-hero-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+
+.leftsec{
+    align-items: center;
+}
+
+.head h1{
+    padding: 10px;
+    font-size: 40px;
+
+}
+
+.exp p{
+    padding: 10px;
+}
+
+.head span {
+    display: initial;
+}
+
+.grid div {
+    margin: 10px;
+    margin-right: 0;
+}
+
+}
